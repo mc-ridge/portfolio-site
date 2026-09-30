@@ -109,6 +109,7 @@ nav a:hover {
 
 /* Page */
 
+
 header > h1 {
     width: min(1050px, 88%);
 
@@ -120,7 +121,7 @@ header > h1 {
     color: #5f9f76;
 
     text-shadow: 2px 2px #cce9f7;
-}
+} 
 
 main {
     width: min(1050px, 88%);
