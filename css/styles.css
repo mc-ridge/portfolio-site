@@ -172,7 +172,7 @@ section {
 }
 
 .hero-image img {
-    width: 270px;
+    width: 350px;
     height: auto;
 
     display: block;
@@ -270,6 +270,7 @@ article p {
 
 .slides {
     display: none;
+    padding-bottom: 30px
 }
 
 .slides img {
@@ -332,7 +333,7 @@ article p {
 .text {
     position: absolute;
 
-    bottom: 8px;
+    bottom: 5px;
     left: 8px;
     right: 8px;
 
@@ -435,6 +436,11 @@ footer {
 footer p {
     margin: 0;
     text-align: center;
+}
+
+/* hyperlinks */
+a {
+    color: #397fa6;
 }
 
 
