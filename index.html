@@ -3,7 +3,8 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-widtch, intitial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Mary-Claire Ridgeway | Portfolio</title>
         <link rel="stylesheet" href="css/styles.css">
     </head>
@@ -12,24 +13,66 @@
 
         <header>
             <nav>
-                <h1>Mary-Claire Ridgeway</h1>
+                <ul class="main-nav">
+                    <li class="hide-on-mobile"><a href="index.html">Home</a></li>
+                    <li class="hide-on-mobile"><a href="current-work.html">Current & Future Work</a></li>
+                    <li class="hide-on-mobile"><a href="undergraduate-work.html">Undergraduate Work</a></li>
+                    <li class="hide-on-mobile"><a href="about.html">About Me</a></li>
+                    <li class="hide-on-mobile"><a href="forum.html">Forum</a></li>
 
-                <u1>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </u1>
+                    <li class="menu-button" onclick="showSidebar()">
+                        <a href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg"
+                                height="24px"
+                                viewBox="0 -960 960 960"
+                                width="24px"
+                                fill="#e3e3e3">
+                                <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="sidebar">
+                    <li onclick="hideSidebar()">
+                        <a href="#">✕</a>
+                    </li>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="current-work.html">Current & Future Work</a></li>
+                    <li><a href="undergraduate-work.html">Undergraduate Work</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="forum.html">Forum</a></li>
+                </ul>
             </nav>
+            <h1>Hi, I am Mary-Claire Ridgeway!</h1>
+
+            <!--<ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>--> 
         </header>
 
         <main>
             <section id="hero">
-                <h2>Hi, I'm Mary-Claire Ridgeway.</h2>
-                <p>I have studied computer science, cybersecurity, and I am currently getting my masters degree in Computer Engineering!</p>
+                <div class="hero-content">
+
+                    <div class="hero-text">
+                        <h2>
+                            I am a graduate research assistant getting my degree in Computer Engineering
+                            at the University of Arkansas.
+                        </h2>
+                    </div>
+
+                    <div class="hero-image">
+                        <img src="photos/Profile/GradProfile2.JPG" alt="Picture of me goes here!">
+                    </div>
+
+                </div>
             </section>
 
             <section id="projects">
-                <h2>Projects</h2>
+                <h2>Short Project Summaries</h2>
 
                 <article>
                     <h3>Reservoir Infrastructure for Threat Analysis (RITA)</h3>
@@ -96,11 +139,6 @@
                 </article>
             </section>
             
-
-            <section id = "about">
-                <h2>About Me</h2>
-                <p>Hello! My name is Mary-Claire Ridgeway, and I am a graduate research assistant and the University of Arkansas.</p>
-            </section>
 
             <section id="contact">
                 <h2>Contact</h2>

@@ -1,3 +1,14 @@
+function showSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = "flex";
+}
+
+function hideSidebar() {
+    const sidebar = document.querySelector(".sidebar");
+    sidebar.style.display = "none";
+}
+
+
 document.querySelectorAll(".slideshow-group").forEach((group) => {
     let slideIndex = 0;
 
@@ -6,6 +17,9 @@ document.querySelectorAll(".slideshow-group").forEach((group) => {
     const prev = group.querySelector(".prev");
     const next = group.querySelector(".next");
 
+    
+
+    
     function showSlide(index) {
         if (index >= slides.length) {
             slideIndex = 0;
