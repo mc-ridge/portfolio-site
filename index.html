@@ -70,8 +70,8 @@
 
                 <article>
                     <h3>Reservoir Infrastructure for Threat Analysis (RITA)</h3>
-                    <p>RITA is a demo meant to represent a pumped-energy storage system. There is a lower tank meant to represent a body of water, and upper tank where
-                        that water is pumped, and a second lower tank depicting a residential area. This demo is a part of RIOT labs outreach program to teach people 
+                    <p>RITA is a miniature version of a pumped-energy storage system. There is a lower tank meant to represent a body of water, and upper tank where
+                        that water is pumped, and a second lower tank depicting a residential area. This demo is a part of RIOT lab's outreach program to teach people 
                         about the possible effects of cyber-attacks on infrastructure. In this project, I mapped out the wiring diagrams, wired and installed the components 
                         in the pelican case, assisted in building HMI components, as well as designing attack vectors. 
                     </p>
@@ -114,13 +114,15 @@
 
                 <article>
                     <h3>Implementing GRUs on AMD Ryzen AI NPU for FLAIR Network-Security Model</h3>
-                    <p>FLAIR is a network-traffic anomaly detection model build by RIOT lab. It learns what normal traffic looks like and flags windows
+                    <p><b>The goal of this project was to implement the FLAIR model on the AMD Ryzen AI NPU using AMD's IRON API.</b>
+                        <br>
+                        FLAIR is a network-traffic anomaly detection model build by RIOT lab. It learns what normal traffic looks like and flags windows
                         that it cannot accurately reconstruct as suspicious. Because it only needs to train on normal behavior, it is useful for IoT and 
-                        industrial network systems where collecting realistic attack data is difficult or unsafe. 
+                        industrial network systems where collecting realistic attack data is difficult or unsafe. <br>
                         The Ryzen AI NPU has a unique tile-architecutre that is designed to speed up neural-network workloads by keeping data close
                         to the compute units and running repeated math operations in parallel. Unfortunately, when trying to run FLAIR on the NPU,
                         most GRU operation were delegated back to the main CPU processor. This is because the tile-architecture isn't designed for
-                        RNNs (Recurrent Neural Networks), which are more complicated to parallelize.
+                        RNNs (Recurrent Neural Networks), which are more complicated to parallelize. <br>
                         To get FLAIR running on the NPU, a teammate and I wrote custom encoder and decoder kernels, then used AMD's IRON API to map
                         the computation, memory buffers, and data movement onto the NPU tiles. The host CPU prepares the input windows and launches
                         the NPU work, while the NPU processes the batched GRU inference and sends the results back to the CPU for scoring. 
@@ -167,8 +169,8 @@
             <section id="contact">
                 <h2>Contact Info</h2>
                 <p>Email: mmr032@uark.edu
-                    <br>Github: <a href="https://github.com/mcridgeway" target="_blank">mcridgeway</a>
-                    <br>LinkedIn: <a href="https://www.linkedin.com/in/mary-claire-ridgeway" target="_blank">mary-claire-ridgeway</a>
+                    <br>Github: <a href="https://github.com/mc-ridge" target="_blank">mcridgeway</a>
+                    <br>LinkedIn: <a href="www.linkedin.com/in/mary-claire-ridgeway-199a13219" target="_blank">mary-claire-ridgeway</a>
                 </p>
             </section>
 
